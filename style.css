@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#070707;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    z-index:1000;
+}
+
+.logo{
+    color:#b56cff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:15px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#b56cff;
+}
+
+/* SECTIONS */
+
+section{
+    padding:120px 10%;
+}
+
+section h2{
+    font-size:40px;
+    margin-bottom:35px;
+    color:#b56cff;
+}
+
+/* HOME */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.tag{
+    display:inline-block;
+    background:#8d4cff;
+    padding:8px 18px;
+    border-radius:25px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#b56cff;
+}
+
+.hero h2{
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#d3d3d3;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn1,.btn2{
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn1{
+    background:#8d4cff;
+    color:white;
+}
+
+.btn2{
+    border:2px solid #8d4cff;
+    color:white;
+}
+
+.btn1:hover,
+.btn2:hover{
+    transform:scale(1.08);
+}
+
+/* ABOUT */
+
+#about p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* CARD */
+
+.card{
+    background:#141414;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(181,108,255,.15);
+}
+
+.card h3{
+    color:#b56cff;
+    margin-bottom:15px;
+}
+
+/* EDUCATION */
+
+#education .card{
+    margin-bottom:30px;
+}
+
+/* SKILLS */
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.skill-card{
+    flex:1;
+    min-width:250px;
+    background:#141414;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 0 10px rgba(181,108,255,.15);
+}
+
+.skill-card h3{
+    color:#b56cff;
+    margin-bottom:15px;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(181,108,255,.35);
+}
+
+/* LISTS */
+
+ul{
+    margin-left:25px;
+    line-height:2;
+}
+
+/* PROJECTS */
+
+#projects .card{
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+#projects .card:hover{
+    transform:translateY(-8px);
+}
+
+#projects h3{
+    color:#b56cff;
+}
+
+#projects ul{
+    margin-top:15px;
+}
+
+/* ACHIEVEMENTS */
+
+#achievements .card{
+    transition:.3s;
+}
+
+#achievements .card:hover{
+    transform:scale(1.02);
+}
+
+#achievements ul{
+    font-size:18px;
+}
+
+/* CONTACT */
+
+#contact p{
+    line-height:2;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8d4cff;
+    border-radius:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.cards{
+    flex-direction:column;
+}
+
+section{
+    padding:100px 7%;
+}
+
+
+}
+/* Smooth transition */
+
+.card,
+.skill-card,
+.btn1,
+.btn2,
+nav a,
+.logo{
+    transition:0.4s ease;
+}
+
+/* Card Hover */
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px rgba(181,108,255,.35);
+
+}
+
+/* Skill Hover */
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 0 25px rgba(181,108,255,.45);
+
+}
+
+/* Button Hover */
+
+.btn1:hover,
+.btn2:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Logo Hover */
+
+.logo:hover{
+
+    color:white;
+
+    transform:scale(1.08);
+
+}
+
+/* Navigation Hover */
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0%;
+
+height:2px;
+
+background:#b56cff;
+
+transition:.4s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
