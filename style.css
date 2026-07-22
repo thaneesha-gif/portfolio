@@ -361,6 +361,11 @@ background:#b56cff;
 transition:.4s;
 
 }
+nav a:hover::after{
+
+width:100%;
+
+}
 /* ===================== Ongoing Project ===================== */
 
 #ongoing-project{
@@ -433,11 +438,5 @@ transition:.4s;
     overflow-x:auto;
     white-space:nowrap;
 }
-
-}
-
-nav a:hover::after{
-
-width:100%;
 
 }
